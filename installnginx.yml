@@ -1,0 +1,8 @@
+- name: Install and configure Nginx for frontend
+  hosts: frontend
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      yum:
+        name:
